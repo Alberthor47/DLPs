@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\alber\Documents\DLPs\Practica2\P4_BTH.ncd
+OUTFILE=C:\Users\alber\Documents\DLPs\Practica2\P4_BTH.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg225
+WORKINGDIR=C:\Users\alber\Documents\DLPs\Practica2
+LICENSE=WebPack
+USER_INFO=212179531_0_0_032

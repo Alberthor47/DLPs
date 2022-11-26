@@ -1,0 +1,76 @@
+#######################################
+## Asignación de terminales parte 1  ##
+#######################################
+
+#Led testigo
+//Net "AuxLed" LOC = M11;
+//Net "Sw" LOC = M8;
+
+#Señal del reloj
+//Net "clk" LOC=E7;
+
+#Display de 7 segmentos
+//Net "seg<0>" LOC=K13;
+//Net "seg<1>" LOC=L15;
+//Net "seg<2>" LOC=M15;
+//Net "seg<3>" LOC=P15;
+//Net "seg<4>" LOC=P14;
+//Net "seg<5>" LOC=K15;
+//Net "seg<6>" LOC=L14;
+
+//Net "an<3>" LOC=H13;
+//Net "an<2>" LOC=K11;
+//Net "an<1>" LOC=J13;
+//Net "an<0>" LOC=K12;
+
+#Encoder Reader
+//Net "JA<4>" LOC=D6;
+//Net "JA<5>" LOC=C4;
+//Net "JA<6>" LOC=K1;
+//Net "JA<7>" LOC=K3;
+
+#LEDS
+//NET "Led<0>" LOC=M1;
+//NET "Led<1>" LOC=P2;
+
+#######################################
+## Asignación de terminales parte 2  ##
+#######################################
+
+//RESET--PUSH BUTTON
+NET "RST" LOC = J4; // btn3 RST
+
+//CLK reloj 50MHz
+NET "CLK" LOC = E7;
+
+#//la nexys 2 habilita LD7 y LD6 pero al invertir el orden se corrige
+NET "DATA<7>" LOC = N9; // LD0
+NET "DATA<6>" LOC = M5; // LD1
+NET "DATA<5>" LOC = M3; // LD2
+NET "DATA<4>" LOC = R10; // LD3
+NET "DATA<3>" LOC = N8; // LD4
+NET "DATA<2>" LOC = R5; // LD5
+NET "DATA<1>" LOC = P1; // LD6
+NET "DATA<0>" LOC = L2; // LD7
+
+// Pmod ALS en JA
+NET "CS" LOC = C10; // JA1
+//NET "NC" LOC = C8; // JA2
+NET "SDO" LOC = D6; // JA3
+NET "SCK" LOC = C4; // JA4
+
+//DISPLAYS
+NET "DISPLAY(7)" LOC = K13; // a
+NET "DISPLAY(6)" LOC = L15; // b
+NET "DISPLAY(5)" LOC = M15; // c
+NET "DISPLAY(4)" LOC = P15; // d
+NET "DISPLAY(3)" LOC = P14; // e
+NET "DISPLAY(2)" LOC = K15; // f
+NET "DISPLAY(1)" LOC = L14; // g
+NET "DISPLAY(0)" LOC = N15; // P
+
+//ANODOS
+NET "AN(0)" LOC = K12; // AN0
+NET "AN(1)" LOC = J13; // AN1
+NET "AN(2)" LOC = K11; // AN2
+NET "AN(3)" LOC = H13; // AN3

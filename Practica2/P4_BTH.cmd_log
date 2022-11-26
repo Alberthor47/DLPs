@@ -1,0 +1,99 @@
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica2/P4_BTH.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba2.ucf -p xc6slx9-csg225-2 P4_BTH.ngc P4_BTH.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P4_BTH_map.ncd P4_BTH.ngd P4_BTH.pcf 
+par -w -intstyle ise -ol high -mt off P4_BTH_map.ncd P4_BTH.ncd P4_BTH.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P4_BTH.twx P4_BTH.ncd -o P4_BTH.twr P4_BTH.pcf -ucf amiba2.ucf 
+bitgen -intstyle ise -f P4_BTH.ut P4_BTH.ncd 

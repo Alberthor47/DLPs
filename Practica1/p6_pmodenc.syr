@@ -1,0 +1,564 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: p6_pmodenc.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "p6_pmodenc.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "p6_pmodenc"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : p6_pmodenc
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\alber\Documents\DLPs\Practica1\LedController.v" into library work
+Parsing module <LedController>.
+Analyzing Verilog file "C:\Users\alber\Documents\DLPs\Practica1\Encoder.v" into library work
+Parsing module <Encoder>.
+Analyzing Verilog file "C:\Users\alber\Documents\DLPs\Practica1\DisplayController.v" into library work
+Parsing module <DisplayController>.
+Analyzing Verilog file "C:\Users\alber\Documents\DLPs\Practica1\Debouncer.v" into library work
+Parsing module <Debouncer>.
+Analyzing Verilog file "C:\Users\alber\Documents\DLPs\Practica1\p6_pmodenc.v" into library work
+Parsing module <p6_pmodenc>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <p6_pmodenc>.
+
+Elaborating module <LedController>.
+
+Elaborating module <Debouncer>.
+
+Elaborating module <Encoder>.
+
+Elaborating module <DisplayController>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <p6_pmodenc>.
+    Related source file is "C:\Users\alber\Documents\DLPs\Practica1\p6_pmodenc.v".
+    Summary:
+	no macro.
+Unit <p6_pmodenc> synthesized.
+
+Synthesizing Unit <LedController>.
+    Related source file is "C:\Users\alber\Documents\DLPs\Practica1\LedController.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <LedController> synthesized.
+
+Synthesizing Unit <Debouncer>.
+    Related source file is "C:\Users\alber\Documents\DLPs\Practica1\Debouncer.v".
+    Found 1-bit register for signal <sampledB>.
+    Found 1-bit register for signal <Aout>.
+    Found 1-bit register for signal <Bout>.
+    Found 7-bit register for signal <sclk>.
+    Found 1-bit register for signal <sampledA>.
+    Found 7-bit adder for signal <sclk[6]_GND_3_o_add_4_OUT> created at line 69.
+    Found 1-bit comparator not equal for signal <sampledA_Ain_equal_3_o> created at line 58
+    Found 1-bit comparator not equal for signal <sampledB_Bin_equal_4_o> created at line 62
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <Debouncer> synthesized.
+
+Synthesizing Unit <Encoder>.
+    Related source file is "C:\Users\alber\Documents\DLPs\Practica1\Encoder.v".
+    Found 5-bit register for signal <EncOut>.
+    Found 32-bit register for signal <curState>.
+    Found finite state machine <FSM_0> for signal <curState>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 39                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 55                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | BTN (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 01101001011001000110110001100101               |
+    | Power Up State     | 01101001011001000110110001100101               |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit subtractor for signal <EncOut[4]_GND_4_o_sub_9_OUT> created at line 79.
+    Found 5-bit adder for signal <EncOut[4]_GND_4_o_add_4_OUT> created at line 71.
+    Found 32-bit comparator equal for signal <n0001> created at line 68
+    Found 5-bit comparator greater for signal <EncOut[4]_PWR_4_o_LessThan_4_o> created at line 70
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Encoder> synthesized.
+
+Synthesizing Unit <DisplayController>.
+    Related source file is "C:\Users\alber\Documents\DLPs\Practica1\DisplayController.v".
+    Found 7-bit register for signal <segOut>.
+    Found 18-bit register for signal <sclk>.
+    Found 4-bit register for signal <anode>.
+    Found 18-bit adder for signal <sclk[17]_GND_6_o_add_10_OUT> created at line 91.
+    Found 32x7-bit Read Only RAM for signal <seg>
+    Found 5-bit comparator greater for signal <GND_6_o_DispVal[4]_LessThan_6_o> created at line 73
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <DisplayController> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 3
+ 18-bit adder                                          : 1
+ 5-bit addsub                                          : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 9
+ 1-bit register                                        : 4
+ 18-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 7-bit register                                        : 2
+# Comparators                                          : 5
+ 1-bit comparator not equal                            : 2
+ 32-bit comparator equal                               : 1
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 9
+ 2-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 6
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <anode_2> in Unit <C2_DisplayController> is equivalent to the following FF/Latch, which will be removed : <anode_3> 
+WARNING:Xst:1710 - FF/Latch <anode_2> (without init value) has a constant value of 1 in block <C2_DisplayController>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Debouncer>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+Unit <Debouncer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DisplayController>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+INFO:Xst:3231 - The small RAM <Mram_seg> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <DispVal>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg>           |          |
+    -----------------------------------------------------------------------
+Unit <DisplayController> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 5-bit addsub                                          : 1
+# Counters                                             : 2
+ 18-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+# Comparators                                          : 5
+ 1-bit comparator not equal                            : 2
+ 32-bit comparator equal                               : 1
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 7
+ 2-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 6
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <anode_2> (without init value) has a constant value of 1 in block <DisplayController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <anode_3> (without init value) has a constant value of 1 in block <DisplayController>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <C1_Encoder/FSM_0> on signal <curState[1:9]> with one-hot encoding.
+-----------------------------------------------
+ State                            | Encoding
+-----------------------------------------------
+ 01101001011001000110110001100101 | 000000001
+ 00000000000000000101001000110001 | 000000010
+ 00000000000000000101001000110010 | 000000100
+ 00000000011000010110010001100100 | 000001000
+ 00000000000000000100110000110001 | 000010000
+ 00000000000000000100110000110010 | 000100000
+ 00000000000000000100110000110011 | 001000000
+ 00000000000000000101001000110011 | 010000000
+ 00000000011100110111010101100010 | 100000000
+-----------------------------------------------
+
+Optimizing unit <p6_pmodenc> ...
+
+Optimizing unit <Debouncer> ...
+
+Optimizing unit <Encoder> ...
+
+Optimizing unit <DisplayController> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block p6_pmodenc, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : p6_pmodenc.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 153
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 17
+#      LUT2                        : 6
+#      LUT3                        : 10
+#      LUT4                        : 12
+#      LUT5                        : 32
+#      LUT6                        : 28
+#      MUXCY                       : 23
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 52
+#      FD                          : 11
+#      FDC                         : 13
+#      FDP                         : 1
+#      FDR                         : 7
+#      FDRE                        : 18
+#      FDSE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 5
+#      OBUF                        : 14
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              52  out of  11440     0%  
+ Number of Slice LUTs:                  108  out of   5720     1%  
+    Number used as Logic:               108  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    116
+   Number with an unused Flip Flop:      64  out of    116    55%  
+   Number with an unused LUT:             8  out of    116     6%  
+   Number of fully used LUT-FF pairs:    44  out of    116    37%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of    160    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 52    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.332ns (Maximum Frequency: 157.922MHz)
+   Minimum input arrival time before clock: 5.873ns
+   Maximum output required time after clock: 7.324ns
+   Maximum combinational path delay: 4.921ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.332ns (frequency: 157.922MHz)
+  Total number of paths / destination ports: 2198 / 77
+-------------------------------------------------------------------------
+Delay:               6.332ns (Levels of Logic = 10)
+  Source:            C1_Encoder/curState_FSM_FFd2 (FF)
+  Destination:       C1_Encoder/EncOut_4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: C1_Encoder/curState_FSM_FFd2 to C1_Encoder/EncOut_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             16   0.525   1.410  C1_Encoder/curState_FSM_FFd2 (C1_Encoder/curState_FSM_FFd2)
+     LUT4:I1->O            2   0.235   1.156  C1_Encoder/curState_FSM_FFd2-In1 (C1_Encoder/curState_FSM_FFd2-In)
+     LUT6:I1->O            1   0.254   0.790  C1_Encoder/curState_nextState[0]1 (C1_Encoder/nextState[0])
+     LUT6:I4->O            1   0.250   0.000  C1_Encoder/Mcompar_n0001_lut<0> (C1_Encoder/Mcompar_n0001_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  C1_Encoder/Mcompar_n0001_cy<0> (C1_Encoder/Mcompar_n0001_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  C1_Encoder/Mcompar_n0001_cy<1> (C1_Encoder/Mcompar_n0001_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  C1_Encoder/Mcompar_n0001_cy<2> (C1_Encoder/Mcompar_n0001_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  C1_Encoder/Mcompar_n0001_cy<3> (C1_Encoder/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  C1_Encoder/Mcompar_n0001_cy<4> (C1_Encoder/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O           5   0.235   0.841  C1_Encoder/Mcompar_n0001_cy<5> (C1_Encoder/n0001)
+     LUT5:I4->O            1   0.254   0.000  C1_Encoder/EncOut_4_rstpot (C1_Encoder/EncOut_4_rstpot)
+     FDC:D                     0.074          C1_Encoder/EncOut_4
+    ----------------------------------------
+    Total                      6.332ns (2.135ns logic, 4.197ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 72 / 63
+-------------------------------------------------------------------------
+Offset:              5.873ns (Levels of Logic = 3)
+  Source:            JA<7> (PAD)
+  Destination:       C2_DisplayController/sclk_17 (FF)
+  Destination Clock: clk rising
+
+  Data Path: JA<7> to C2_DisplayController/sclk_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            28   1.328   1.453  JA_7_IBUF (JA_7_IBUF)
+     LUT3:I2->O            1   0.254   0.910  C2_DisplayController/_n0050_SW0 (N28)
+     LUT6:I3->O           18   0.235   1.234  C2_DisplayController/_n0050 (C2_DisplayController/_n0050)
+     FDRE:R                    0.459          C2_DisplayController/sclk_0
+    ----------------------------------------
+    Total                      5.873ns (2.276ns logic, 3.597ns route)
+                                       (38.8% logic, 61.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 22 / 11
+-------------------------------------------------------------------------
+Offset:              7.324ns (Levels of Logic = 3)
+  Source:            C1_Encoder/curState_FSM_FFd6 (FF)
+  Destination:       Led<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: C1_Encoder/curState_FSM_FFd6 to Led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             21   0.525   1.586  C1_Encoder/curState_FSM_FFd6 (C1_Encoder/curState_FSM_FFd6)
+     LUT4:I0->O            1   0.254   1.112  C1_Encoder/Mmux_LED21_SW0 (N10)
+     LUT6:I1->O            1   0.254   0.681  C1_Encoder/Mmux_LED21 (Led_0_OBUF)
+     OBUF:I->O                 2.912          Led_0_OBUF (Led<0>)
+    ----------------------------------------
+    Total                      7.324ns (3.945ns logic, 3.379ns route)
+                                       (53.9% logic, 46.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               4.921ns (Levels of Logic = 2)
+  Source:            Sw (PAD)
+  Destination:       AuxLed (PAD)
+
+  Data Path: Sw to AuxLed
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  Sw_IBUF (Sw_IBUF)
+     OBUF:I->O                 2.912          AuxLed_OBUF (AuxLed)
+    ----------------------------------------
+    Total                      4.921ns (4.240ns logic, 0.681ns route)
+                                       (86.2% logic, 13.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.332|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.56 secs
+ 
+--> 
+
+Total memory usage is 4487804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

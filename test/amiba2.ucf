@@ -1,0 +1,8 @@
+NET "clk" LOC = E7;
+NET "dir" LOC = N2;
+NET "stop" LOC =J4;
+NET "vel" LOC = R7;
+NET "mot(0)" LOC = E4;
+NET "mot(1)" LOC = D5;
+NET "mot(2)" LOC = C7;
+NET "mot(3)" LOC = D10;

@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 p6_pmodals.ngc p6_pmodals.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o p6_pmodals_map.ncd p6_pmodals.ngd p6_pmodals.pcf 
+par -w -intstyle ise -ol high -mt off p6_pmodals_map.ncd p6_pmodals.ncd p6_pmodals.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml p6_pmodals.twx p6_pmodals.ncd -o p6_pmodals.twr p6_pmodals.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba_master.ucf -p xc6slx9-csg225-2 p6_pmodals.ngc p6_pmodals.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba_master.ucf -p xc6slx9-csg225-2 p6_pmodals.ngc p6_pmodals.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o p6_pmodals_map.ncd p6_pmodals.ngd p6_pmodals.pcf 
+par -w -intstyle ise -ol high -mt off p6_pmodals_map.ncd p6_pmodals.ncd p6_pmodals.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml p6_pmodals.twx p6_pmodals.ncd -o p6_pmodals.twr p6_pmodals.pcf -ucf amiba_master.ucf 
+bitgen -intstyle ise -f p6_pmodals.ut p6_pmodals.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodals.syr" 

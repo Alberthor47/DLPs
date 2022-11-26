@@ -1,0 +1,44 @@
+
+##############################
+## Asignación de terminales ##
+##############################
+
+// RESET
+NET "rst" LOC = J3; // boton de reset
+
+// CLK 50MHz
+NET "clk" LOC = E7;
+
+// DISPLAYS
+// NET "dsply(7)" LOC = K13; // a
+// NET "dsply(6)" LOC = L15; // b
+// NET "dsply(5)" LOC = M15; // c
+// NET "dsply(4)" LOC = P15; // d
+// NET "dsply(3)" LOC = P14; // e
+// NET "dsply(2)" LOC = K15; // f
+// NET "dsply(1)" LOC = L14; // g
+// NET "dsply(0)" LOC = N15; // P
+
+// ANODOS
+// NET "anode(0)" LOC = G13; // AN0
+// NET "anode(1)" LOC = H12; // AN1
+// NET "anode(2)" LOC = F13; // AN2
+// NET "anode(3)" LOC = G12; // AN3
+
+// LCD 
+NET "lcd_rs" LOC = D13;
+NET "lcd_rw" LOC = E2;
+NET "lcd_e" LOC = A2;
+NET "lcd_d(0)" LOC = B3;
+NET "lcd_d(1)" LOC = A5;
+NET "lcd_d(2)" LOC = C6;
+NET "lcd_d(3)" LOC = A8;
+NET "lcd_d(4)" LOC = C9;
+NET "lcd_d(5)" LOC = A11;
+NET "lcd_d(6)" LOC = B13;
+NET "lcd_d(7)" LOC = B15;
+NET "led_busy" LOC = N14;
+
+// TEST
+NET "led_test" LOC = N1;
+

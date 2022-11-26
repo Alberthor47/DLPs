@@ -1,0 +1,43 @@
+
+##############################
+## Asignación de terminales ##
+##############################
+
+// RESET--PUSH BUTTON
+NET "reset" LOC = J3; // boton de reset
+
+// CLK reloj 50MHz
+NET "clk" LOC = E7;
+
+// DISPLAYS
+NET "display(7)" LOC = K13; // a
+NET "display(6)" LOC = L15; // b
+NET "display(5)" LOC = M15; // c
+NET "display(4)" LOC = P15; // d
+NET "display(3)" LOC = P14; // e
+NET "display(2)" LOC = K15; // f
+NET "display(1)" LOC = L14; // g
+NET "display(0)" LOC = N15; // P
+
+// ANODOS
+NET "AN(0)" LOC = G13; // AN0
+NET "AN(1)" LOC = H12; // AN1
+NET "AN(2)" LOC = F13; // AN2
+NET "AN(3)" LOC = G12; // AN3
+
+// LECTOR ENCODER
+NET "A" LOC = C4;
+NET "B" LOC = D6;
+
+// PWM del SERVO
+NET "servomotor" LOC = E15;
+
+// LED TESTIGO
+NET "servoLED" LOC = M6;
+
+// LEDS del contador
+NET "contador(0)" LOC = N1;
+NET "contador(1)" LOC = R4;
+NET "contador(2)" LOC = P7;
+NET "contador(3)" LOC = R9;
+NET "contador(4)" LOC = P13;

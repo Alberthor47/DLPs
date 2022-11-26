@@ -1,0 +1,3 @@
+vhdl work "lcd_controller.vhd"
+vhdl work "data_logic.vhd"
+vhdl work "MedidorVIP.vhd"

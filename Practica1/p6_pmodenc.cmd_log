@@ -1,0 +1,45 @@
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba_master.ucf -p xc6slx9-csg225-2 p6_pmodenc.ngc p6_pmodenc.ngd  
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba_master.ucf -p xc6slx9-csg225-2 p6_pmodenc.ngc p6_pmodenc.ngd  
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba_master.ucf -p xc6slx9-csg225-2 p6_pmodenc.ngc p6_pmodenc.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o p6_pmodenc_map.ncd p6_pmodenc.ngd p6_pmodenc.pcf 
+par -w -intstyle ise -ol high -mt off p6_pmodenc_map.ncd p6_pmodenc.ncd p6_pmodenc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml p6_pmodenc.twx p6_pmodenc.ncd -o p6_pmodenc.twr p6_pmodenc.pcf -ucf amiba_master.ucf 
+bitgen -intstyle ise -f p6_pmodenc.ut p6_pmodenc.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba_master.ucf -p xc6slx9-csg225-2 p6_pmodenc.ngc p6_pmodenc.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o p6_pmodenc_map.ncd p6_pmodenc.ngd p6_pmodenc.pcf 
+par -w -intstyle ise -ol high -mt off p6_pmodenc_map.ncd p6_pmodenc.ncd p6_pmodenc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml p6_pmodenc.twx p6_pmodenc.ncd -o p6_pmodenc.twr p6_pmodenc.pcf -ucf amiba_master.ucf 
+bitgen -intstyle ise -f p6_pmodenc.ut p6_pmodenc.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 p6_pmodenc.ngc p6_pmodenc.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o p6_pmodenc_map.ncd p6_pmodenc.ngd p6_pmodenc.pcf 
+par -w -intstyle ise -ol high -mt off p6_pmodenc_map.ncd p6_pmodenc.ncd p6_pmodenc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml p6_pmodenc.twx p6_pmodenc.ncd -o p6_pmodenc.twr p6_pmodenc.pcf 
+bitgen -intstyle ise -f p6_pmodenc.ut p6_pmodenc.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 p6_pmodenc.ngc p6_pmodenc.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o p6_pmodenc_map.ncd p6_pmodenc.ngd p6_pmodenc.pcf 
+par -w -intstyle ise -ol high -mt off p6_pmodenc_map.ncd p6_pmodenc.ncd p6_pmodenc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml p6_pmodenc.twx p6_pmodenc.ncd -o p6_pmodenc.twr p6_pmodenc.pcf 
+bitgen -intstyle ise -f p6_pmodenc.ut p6_pmodenc.ncd 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 p6_pmodenc.ngc p6_pmodenc.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o p6_pmodenc_map.ncd p6_pmodenc.ngd p6_pmodenc.pcf 
+par -w -intstyle ise -ol high -mt off p6_pmodenc_map.ncd p6_pmodenc.ncd p6_pmodenc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml p6_pmodenc.twx p6_pmodenc.ncd -o p6_pmodenc.twr p6_pmodenc.pcf 
+xst -intstyle ise -ifn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.xst" -ofn "C:/Users/alber/Documents/DLPs/Practica1/p6_pmodenc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc amiba_master.ucf -p xc6slx9-csg225-2 p6_pmodenc.ngc p6_pmodenc.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o p6_pmodenc_map.ncd p6_pmodenc.ngd p6_pmodenc.pcf 
+par -w -intstyle ise -ol high -mt off p6_pmodenc_map.ncd p6_pmodenc.ncd p6_pmodenc.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml p6_pmodenc.twx p6_pmodenc.ncd -o p6_pmodenc.twr p6_pmodenc.pcf -ucf amiba_master.ucf 
+bitgen -intstyle ise -f p6_pmodenc.ut p6_pmodenc.ncd 

@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Nov 24 12:28:04 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "lcd_rw" LOCATE = SITE "E2" LEVEL 1;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "lcd_d<0>" LOCATE = SITE "B3" LEVEL 1;
+COMP "led_test" LOCATE = SITE "N1" LEVEL 1;
+COMP "lcd_d<1>" LOCATE = SITE "A5" LEVEL 1;
+COMP "lcd_d<2>" LOCATE = SITE "C6" LEVEL 1;
+COMP "lcd_d<3>" LOCATE = SITE "A8" LEVEL 1;
+COMP "lcd_d<4>" LOCATE = SITE "C9" LEVEL 1;
+COMP "lcd_d<5>" LOCATE = SITE "A11" LEVEL 1;
+COMP "lcd_d<6>" LOCATE = SITE "B13" LEVEL 1;
+COMP "lcd_d<7>" LOCATE = SITE "B15" LEVEL 1;
+COMP "led_busy" LOCATE = SITE "N14" LEVEL 1;
+COMP "lcd_e" LOCATE = SITE "A2" LEVEL 1;
+COMP "rst" LOCATE = SITE "J3" LEVEL 1;
+COMP "lcd_rs" LOCATE = SITE "D13" LEVEL 1;
+SCHEMATIC END;
+

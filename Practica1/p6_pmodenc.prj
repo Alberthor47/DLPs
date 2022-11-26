@@ -1,0 +1,5 @@
+verilog work "LedController.v"
+verilog work "Encoder.v"
+verilog work "DisplayController.v"
+verilog work "Debouncer.v"
+verilog work "p6_pmodenc.v"
